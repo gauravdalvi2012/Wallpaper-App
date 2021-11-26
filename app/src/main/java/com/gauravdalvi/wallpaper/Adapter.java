@@ -58,7 +58,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(context, viewWallpaper.class);
-                intent.putExtra("image", wallpaperList.get(position).getSrc().getPortrait());
+                intent.putExtra("imageUrl", wallpaperList.get(position).getSrc().getPortrait());
                 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 context.startActivity(intent);
             }
